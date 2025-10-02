@@ -1,0 +1,178 @@
+/* Estilos generales del body */
+body {
+    color: #5D5F63;
+    background: #dde4f5;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Estilo del logo */
+#logo {
+    width: 75px;
+    aspect-ratio: 240 / 227; /* Relación de aspecto original */
+    margin: 20px;
+    grid-column: 1; /* Coloca el logo en la primera columna */
+    align-self: start; /* Alinea el logo en la parte superior */
+    background-color: #f1f6ff;
+}
+
+/* Contenedor principal */
+.column {
+    background-color: #f1f6ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Tres columnas iguales */
+    align-items: start; /* Alinea los elementos en la parte superior */
+    height: 105px;
+    gap: 0px; /* Elimina cualquier separación adicional */
+}
+
+/* Estilo del título h1 */
+h1 {
+    font-size: 30px;
+    color: #283785;
+    font-family: Verdana, sans-serif;
+    margin: 20px 0px 0px 30px; /* Reducir margen inferior a 5px */
+    grid-column: 2 / 4; /* El título abarca las columnas 2 y 3 */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo del subtítulo h2 */
+h2 {
+    font-size: 14px;
+    color: #283785;
+    font-family: Verdana, sans-serif;
+    margin: 20px 50px 0px, 0px; /* Sin margen superior ni inferior */
+    grid-column: 2 / 4; /* El subtítulo abarca las columnas 2 y 3 */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+h1, h2 {
+    line-height: 1;
+}
+
+/* Estilos del menú lateral */
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background: #f0f6fe;
+    position: absolute;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+}
+
+.sidebar #leftside-navigation ul,
+.sidebar #leftside-navigation ul ul {
+    margin: -2px 0 0;
+    padding: 0;
+}
+
+.sidebar #leftside-navigation ul li {
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar #leftside-navigation ul li.active > a {
+    color: #f0f6fe;
+}
+
+.sidebar #leftside-navigation ul li a {
+    color: #52555a;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0 18px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.sidebar #leftside-navigation ul li a:hover {
+    color: #000000;
+}
+
+.sidebar #leftside-navigation ul li a span {
+    display: inline-block;
+}
+
+.sidebar #leftside-navigation ul li a i {
+    width: 20px;
+}
+
+.sidebar #leftside-navigation ul ul {
+    display: none;
+}
+
+.sidebar #leftside-navigation ul ul li {
+    background: #f0f6fe;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: none;
+}
+
+.sidebar #leftside-navigation ul ul li a {
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #52555a;
+}
+
+/* Estilos para los cuadros de acceso rápido */
+.quick-access {
+    display: flex;
+    flex-direction: column; /* Apila los cuadros verticalmente */
+    align-items: center; /* Centra los cuadros horizontalmente */
+    margin-top: 20px;
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.quick-access .box {
+    background: #f1f7fe;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%; /* Estira los cuadros */
+    max-width: 1000px; /* Limita el ancho máximo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Espaciado entre cuadros */
+    margin-left: 160px;
+}
+
+.quick-access .box:hover {
+    transform: translateY(-5px);
+}
+
+.quick-access .box i {
+    font-size: 40px;
+    color: #283785;
+    margin-bottom: 10px;
+}
+
+.quick-access .box h3 {
+    font-size: 18px;
+    color: #283785;
+    margin: 10px 0;
+}
+
+.quick-access .box p {
+    font-size: 14px;
+    color: #5D5F63;
+}
+
+/* Contenedor principal desplazado por el sidebar (nuevo) */
+.container {
+    margin-left: 240px; /* Ajuste para el menú lateral */
+    padding: 20px;
+}

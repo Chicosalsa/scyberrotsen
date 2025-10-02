@@ -1,0 +1,118 @@
+:root {
+    --primary: hsl(213deg 85% 97%);
+    --secondary: hsl(233deg 36% 38%);
+    --background: hsl(218deg 50% 91%);
+    --white: hsl(0deg 0% 100%);
+    --shadow: hsl(231deg 62% 94%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.screen-1 {
+    background: var(--primary);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em var(--shadow);
+    gap: 2em;
+    max-width: 400px;
+    width: 90%;
+}
+
+.logo {
+    margin: -3em auto 0;
+    width: 300px;  /* Increased from 100px to 150px */
+    height: 300px; /* Increased from 100px to 150px */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; /* Added gap between form elements */
+}
+
+.email, .password {
+    background: var(--white);
+    box-shadow: 0 0 2em var(--shadow);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+input::placeholder {
+    color: hsl(0deg 0% 0%);
+    font-size: 0.9em;
+}
+
+.sec-2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+ion-icon {
+    color: hsl(0deg 0% 30%);
+    font-size: 1.2em;
+}
+
+.login {
+    margin-top: 1em; /* Added space above the login button */
+    padding: 1em;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.login:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: hsl(0deg 0% 37%);
+}
+
+.footer span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer span:hover {
+    color: var(--secondary);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 1em;
+}

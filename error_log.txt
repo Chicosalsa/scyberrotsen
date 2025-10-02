@@ -1,0 +1,7 @@
+[2025-04-10 20:39:54] Intentando usar ID de servicio: 14
+[2025-04-11 04:41:57] Intentando usar ID de servicio: 17
+[2025-09-29 03:26:58] Intentando usar ID de servicio: 3, User_Id: 1
+[2025-09-29 03:32:32] Intentando usar ID de servicio: 4, User_Id: 1
+[2025-09-29 03:49:33] Intentando usar ID de servicio: 5, User_Id: 1
+[2025-09-29 04:24:41] Intentando usar ID de servicio: 9, User_Id: 1
+[2025-10-02 01:15:58] Error en escaner.php: Unknown column 'FechaEntrega' in 'field list'

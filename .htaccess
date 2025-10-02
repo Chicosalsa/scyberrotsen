@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Manejo de errores
+ErrorDocument 404 /Error404.php
+ErrorDocument 403 /Error404.php
+ErrorDocument 500 /Error404.php
+
+# Opcional: Redirección para URLs amigables
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /Error404.php [L]
